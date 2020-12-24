@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: singhramkumarazuredevopsgithubacraksappram 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: singhramkumarazuredevopsgithubacraksappram
+  template:
+    metadata:
+      labels:
+        app: singhramkumarazuredevopsgithubacraksappram 
+    spec:
+      containers:
+        - name: singhramkumarazuredevopsgithubacraksappram 
+          image: aksdevopsacram.azurecr.io/singhramkumarazuredevopsgithubacraksappram
+          ports:
+          - containerPort: 80
